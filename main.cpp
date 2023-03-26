@@ -179,6 +179,15 @@ int main() {
     for (Product p : products){
         p.printProductInfo();
     }
+
+
+    //calculating the sum of the products:
+    double sum = 0;
+    for (Product p : products){
+        sum += p.getPrice();
+    }
+    cout<<"The sum of the products is: "<<sum<<endl;
+
     return 0;
 }
 
